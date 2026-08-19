@@ -1,5 +1,8 @@
 #FROM registry.redhat.io/rhel8/nodejs-16
-FROM default-route-openshift-image-registry.apps.ocp4.example.com/demo/nodejs-16
+#FROM default-route-openshift-image-registry.apps.ocp4.example.com/demo/nodejs-16
+
+FROM image-registry.openshift-image-registry.svc:5000/test-application/nodejs-22:1787171864
+
 ENV APP_ROOT=/opt/app-root
 
 WORKDIR $APP_ROOT
