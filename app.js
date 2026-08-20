@@ -139,7 +139,7 @@ const appVersion = package.version;
 console.log(`Starting ${appName} v${appVersion}.`);
 
 app.listen(app.get('port'), '0.0.0.0', function() {
-	  console.log("Now serving quotes on port " + app.get('port'));
+	  console.log("ANCE quotes on port " + app.get('port'));
 });
 
 
